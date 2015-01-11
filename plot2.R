@@ -1,4 +1,4 @@
-pwr_cons <- read.csv("./household_power_consumption.txt",sep=";",na.strings='?',header=TRUE,colClasses = c("character",rep("factor",1),rep("numeric",7)))
+pwr_cons <- read.csv("household_power_consumption.txt",sep=";",na.strings='?',header=TRUE,colClasses = c("character",rep("factor",1),rep("numeric",7)))
 
 selection<-pwr_cons[pwr_cons$Date %in% c("1/2/2007","2/2/2007"),]
 
